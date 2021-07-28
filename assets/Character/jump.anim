@@ -1,0 +1,81 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "jump",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 24,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [],
+    "enableTrsBlending": false,
+    "_duration": 0.3333333333333333,
+    "_keys": [
+      [
+        0,
+        0.041666666666666664,
+        0.08333333333333333,
+        0.125,
+        0.16666666666666666,
+        0.20833333333333334,
+        0.25,
+        0.2916666666666667
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@8dbf7",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@94128",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@a1f78",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@c22f9",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@2c172",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@bb5a0",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@5ea4e",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "aa5b2f20-2391-4553-80d1-82a94f9eab47@5f61d",
+              "__expectedType__": "cc.SpriteFrame"
+            }
+          ],
+          "easingMethods": {}
+        }
+      }
+    ],
+    "_commonTargets": [],
+    "_hash": 1792593774
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "__version__": "1.0.1",
+  "layer": [
+    {
+      "name": "GAME_VIEW",
+      "value": 1
+    }
+  ],
+  "physics": {
+    "collisionMatrix": {
+      "0": 0,
+      "1": 6,
+      "2": 2
+    },
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "CHARACTER"
+      },
+      {
+        "index": 2,
+        "name": "GROUND"
+      }
+    ]
+  }
+}

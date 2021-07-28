@@ -1,0 +1,290 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47",
+  "files": [
+    ".plist",
+    ".json"
+  ],
+  "subMetas": {
+    "94128": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@94128",
+      "displayName": "",
+      "id": "94128",
+      "name": "WizardJump/CharaWizardJump_00001",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -3,
+        "offsetY": -7.5,
+        "trimX": 460,
+        "trimY": 0,
+        "width": 154,
+        "height": 275,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a1f78": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@a1f78",
+      "displayName": "",
+      "id": "a1f78",
+      "name": "WizardJump/CharaWizardJump_00002",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -6.5,
+        "offsetY": -7,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 153,
+        "height": 270,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c22f9": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@c22f9",
+      "displayName": "",
+      "id": "c22f9",
+      "name": "WizardJump/CharaWizardJump_00003",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -5,
+        "offsetY": -7,
+        "trimX": 153,
+        "trimY": 0,
+        "width": 154,
+        "height": 272,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2c172": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@2c172",
+      "displayName": "",
+      "id": "2c172",
+      "name": "WizardJump/CharaWizardJump_00004",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -3.5,
+        "offsetY": -7,
+        "trimX": 307,
+        "trimY": 0,
+        "width": 153,
+        "height": 274,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bb5a0": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@bb5a0",
+      "displayName": "",
+      "id": "bb5a0",
+      "name": "WizardJump/CharaWizardJump_00005",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -3,
+        "offsetY": -7,
+        "trimX": 614,
+        "trimY": 0,
+        "width": 154,
+        "height": 276,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8dbf7": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@8dbf7",
+      "displayName": "",
+      "id": "8dbf7",
+      "name": "WizardJump/CharaWizardJump_00000",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1.5,
+        "offsetY": -7,
+        "trimX": 768,
+        "trimY": 0,
+        "width": 155,
+        "height": 278,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5ea4e": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@5ea4e",
+      "displayName": "",
+      "id": "5ea4e",
+      "name": "WizardJump/CharaWizardJump_00006",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -2.5,
+        "offsetY": -7,
+        "trimX": 923,
+        "trimY": 0,
+        "width": 155,
+        "height": 278,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5f61d": {
+      "importer": "sprite-frame",
+      "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47@5f61d",
+      "displayName": "",
+      "id": "5f61d",
+      "name": "WizardJump/CharaWizardJump_00007",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1.5,
+        "offsetY": -7,
+        "trimX": 1078,
+        "trimY": 0,
+        "width": 155,
+        "height": 278,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a",
+        "atlasUuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "CharacterJump.png",
+    "format": 2,
+    "uuid": "aa5b2f20-2391-4553-80d1-82a94f9eab47",
+    "textureUuid": "ac79cca1-b5c5-4b46-92dc-4b8c6eb744f8@6c48a"
+  }
+}
