@@ -195,7 +195,7 @@
     "awakeOnLoad": true,
     "_group": 8,
     "_type": 0,
-    "_allowSleep": false,
+    "_allowSleep": true,
     "_gravityScale": 1,
     "_linearDamping": 0,
     "_angularDamping": 0,

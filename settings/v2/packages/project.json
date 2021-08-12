@@ -9,13 +9,16 @@
   "physics": {
     "collisionMatrix": {
       "0": 0,
-      "1": 254,
-      "2": 210,
-      "3": 210,
-      "4": 126,
+      "1": 702,
+      "2": 2002,
+      "3": 978,
+      "4": 382,
       "5": 18,
-      "6": 158,
-      "7": 78
+      "6": 668,
+      "7": 334,
+      "8": 668,
+      "9": 1358,
+      "10": 516
     },
     "collisionGroups": [
       {
@@ -36,7 +39,7 @@
       },
       {
         "index": 5,
-        "name": "SENSOR"
+        "name": "ENEMIES_SENSOR"
       },
       {
         "index": 6,
@@ -44,8 +47,21 @@
       },
       {
         "index": 7,
-        "name": "BULLET"
+        "name": "ENEMIES_BULLET"
+      },
+      {
+        "index": 8,
+        "name": "CHARACTER_BULLET"
+      },
+      {
+        "index": 9,
+        "name": "ENEMY"
+      },
+      {
+        "index": 10,
+        "name": "CHARACTER_BULLET_SENSOR"
       }
-    ]
+    ],
+    "fixedTimeStep": 0.016667
   }
 }

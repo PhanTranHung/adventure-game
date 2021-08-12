@@ -22,10 +22,11 @@ import {
   Prefab,
   v3,
   instantiate,
+  CCFloat,
 } from "cc";
 const { ccclass, property } = _decorator;
 
-import * as ccc from "cc";
+// import * as ccc from "cc";
 import { flip } from "../../util/util";
 
 // window.ccc = ccc;
@@ -58,11 +59,16 @@ export class CharacterController extends Component {
   public jumpHeight: number = 10;
   @property(Prefab)
   private bullet: Prefab | null = null;
+  @property({ type: CCFloat })
+  private attackSpeed: number = 1;
+  @property(Vec3)
+  private revivlePosition: Vec3 = v3(720.137, -19.032, 0);
 
   private moveDirection = v2(1, 0);
   private movingState = v2(0, 0);
   private rigidBody: RigidBody2D | null = null;
   private footCollider: CircleCollider2D | null = null;
+  private isShootable = false;
 
   onLoad() {
     this.moveDirection = v2(1, 0);
@@ -76,6 +82,10 @@ export class CharacterController extends Component {
 
     systemEvent.on(SystemEventType.KEY_DOWN, this.onKeyDown, this);
     systemEvent.on(SystemEventType.KEY_UP, this.onKeyUp, this);
+  }
+
+  start() {
+    this.isShootable = true;
   }
 
   onBeginContact(selfCollider: BoxCollider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
@@ -103,7 +113,12 @@ export class CharacterController extends Component {
 
       case macro.KEY.w:
       case macro.KEY.up:
+      case macro.KEY.space:
         this.startJumping();
+        break;
+
+      case macro.KEY.r:
+        this.revivle();
         break;
     }
   }
@@ -181,15 +196,26 @@ export class CharacterController extends Component {
   }
 
   handleAttack() {
-    if (this.bullet) {
-      const bullet = ccc.instantiate(this.bullet);
-      bullet.parent = this.node.parent;
-      bullet.setPosition(this.node.getPosition());
+    if (this.isShootable) {
+      this.isShootable = false;
+      if (this.bullet) {
+        const bullet = instantiate(this.bullet);
+        bullet.parent = this.node.parent;
+        bullet.setPosition(this.node.getPosition());
 
-      const bulletRigidBody = bullet.getComponent(RigidBody2D);
-      if (bulletRigidBody) {
-        bulletRigidBody.linearVelocity = bulletRigidBody.linearVelocity.multiply(this.moveDirection);
+        const bulletRigidBody = bullet.getComponent(RigidBody2D);
+        if (bulletRigidBody) {
+          bulletRigidBody.linearVelocity = bulletRigidBody.linearVelocity.multiply(this.moveDirection);
+        }
       }
+      this.scheduleOnce(() => {
+        this.isShootable = true;
+      }, this.attackSpeed);
     }
+  }
+
+  revivle() {
+    this.node.setPosition(this.revivlePosition);
+    if (this.rigidBody) this.rigidBody.linearVelocity = v2(0, 0);
   }
 }
