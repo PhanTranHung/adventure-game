@@ -1,0 +1,222 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43",
+  "files": [
+    ".plist",
+    ".json"
+  ],
+  "subMetas": {
+    "498f3": {
+      "importer": "sprite-frame",
+      "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43@498f3",
+      "displayName": "",
+      "id": "498f3",
+      "name": "MossyDecor4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 257,
+        "height": 985,
+        "rawWidth": 257,
+        "rawHeight": 985,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a",
+        "atlasUuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d7440": {
+      "importer": "sprite-frame",
+      "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43@d7440",
+      "displayName": "",
+      "id": "d7440",
+      "name": "MossyDecor5",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 257,
+        "trimY": 0,
+        "width": 254,
+        "height": 573,
+        "rawWidth": 254,
+        "rawHeight": 573,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a",
+        "atlasUuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "414f2": {
+      "importer": "sprite-frame",
+      "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43@414f2",
+      "displayName": "",
+      "id": "414f2",
+      "name": "MossyDecor1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 511,
+        "trimY": 0,
+        "width": 413,
+        "height": 422,
+        "rawWidth": 413,
+        "rawHeight": 422,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a",
+        "atlasUuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9520a": {
+      "importer": "sprite-frame",
+      "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43@9520a",
+      "displayName": "",
+      "id": "9520a",
+      "name": "MossyDecor3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 511,
+        "trimY": 422,
+        "width": 412,
+        "height": 223,
+        "rawWidth": 412,
+        "rawHeight": 223,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a",
+        "atlasUuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2225a": {
+      "importer": "sprite-frame",
+      "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43@2225a",
+      "displayName": "",
+      "id": "2225a",
+      "name": "MossyDecor6",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 257,
+        "trimY": 645,
+        "width": 267,
+        "height": 246,
+        "rawWidth": 267,
+        "rawHeight": 246,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a",
+        "atlasUuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "18af8": {
+      "importer": "sprite-frame",
+      "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43@18af8",
+      "displayName": "",
+      "id": "18af8",
+      "name": "MossyDecor2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 524,
+        "trimY": 645,
+        "width": 226,
+        "height": 158,
+        "rawWidth": 226,
+        "rawHeight": 158,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a",
+        "atlasUuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "MossyDecoration.png",
+    "format": 2,
+    "uuid": "72d54f20-03a2-4c11-9fc7-39ae74748c43",
+    "textureUuid": "d60ffe3e-6aa9-4510-955f-e63f2c0f24b4@6c48a"
+  }
+}

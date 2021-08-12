@@ -104,7 +104,9 @@
  </tile>
  <tile id="17">
   <objectgroup draworder="index" id="2">
-   <object id="4" x="32" y="0" width="64" height="64"/>
+   <object id="5" x="32" y="0">
+    <polygon points="0,0 0,64 32,96 64,64 64,0"/>
+   </object>
   </objectgroup>
  </tile>
  <tile id="18">

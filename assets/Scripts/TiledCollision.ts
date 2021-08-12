@@ -1,4 +1,4 @@
-import { _decorator, Component, TiledLayer, TiledMap, Enum, PolygonCollider2D, Collider2D, Vec2, Size, BoxCollider2D, v2 } from "cc";
+import { _decorator, Component, TiledLayer, TiledMap, Enum, PolygonCollider2D, Collider2D, Vec2, Size, BoxCollider2D, v2, UITransform } from "cc";
 const { ccclass, property } = _decorator;
 import fxp from "fast-xml-parser";
 
@@ -28,7 +28,7 @@ export class TiledCollision extends Component {
     this.tileMap = this.node.getComponent(TiledMap);
     if (this.tileMap) {
       this.tileLayer = this.tileMap.getLayer("Map");
-      console.log(this.tileLayer);
+      // console.log(this.tileLayer);
       this.tileSize = this.tileMap.getTileSize();
 
       if (this.tileLayer) {
@@ -48,12 +48,15 @@ export class TiledCollision extends Component {
   initTerrain() {
     const tiles2d = this.getTiles(this.tileLayer!);
 
-    console.log("----------------------------", tiles2d, this.tileColliders);
+    // console.log("----------------------------", tiles2d, this.tileColliders);
+    const uiTransform: UITransform = this.node.getComponent(UITransform)!;
 
     tiles2d.forEach((row, y) => {
       row.forEach((value, x) => {
         if (value <= 0) return;
-        const tilePosition = this.tileLayer?.getPositionAt(x, y);
+        let tilePosition = this.tileLayer?.getPositionAt(x, y);
+        // tilePosition?.subtract(uiTransform.anchorPoint.multiply(<any>uiTransform.contentSize));
+
         const tileCollidersAtThisPoint = this.tileColliders[value - 1];
 
         if (!tilePosition || !tileCollidersAtThisPoint) return;

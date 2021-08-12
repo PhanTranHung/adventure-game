@@ -1,0 +1,94 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "JumpPlantPush",
+  "_objFlags": 0,
+  "_native": "",
+  "sample": 24,
+  "speed": 1,
+  "wrapMode": 1,
+  "events": [
+    {
+      "frame": 0.7916666666666666,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0.7916666666666666,
+      "func": "returnIdleState",
+      "params": []
+    }
+  ],
+  "enableTrsBlending": false,
+  "_duration": 0.7916666666666666,
+  "_keys": [
+    [
+      0,
+      0.16666666666666666,
+      0.7916666666666666
+    ],
+    [
+      0,
+      0.16666666666666666,
+      0.7916666666666666
+    ],
+    [
+      0,
+      0.7916666666666666
+    ]
+  ],
+  "_stepness": 0,
+  "_curves": [
+    {
+      "modifiers": [
+        "x"
+      ],
+      "data": {
+        "keys": 0,
+        "values": [
+          0.62,
+          0.508,
+          0.539
+        ],
+        "easingMethods": {}
+      },
+      "commonTarget": 0
+    },
+    {
+      "modifiers": [
+        "y"
+      ],
+      "data": {
+        "keys": 1,
+        "values": [
+          0.472,
+          0.647,
+          0.539
+        ],
+        "easingMethods": {}
+      },
+      "commonTarget": 0
+    },
+    {
+      "modifiers": [
+        "z"
+      ],
+      "data": {
+        "keys": 2,
+        "values": [
+          0.539,
+          0.539
+        ],
+        "easingMethods": {}
+      },
+      "commonTarget": 0
+    }
+  ],
+  "_commonTargets": [
+    {
+      "modifiers": [
+        "scale"
+      ]
+    }
+  ],
+  "_hash": 3357278380
+}

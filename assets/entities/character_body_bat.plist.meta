@@ -1,0 +1,154 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5",
+  "files": [
+    ".plist",
+    ".json"
+  ],
+  "subMetas": {
+    "84411": {
+      "importer": "sprite-frame",
+      "uuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5@84411",
+      "displayName": "",
+      "id": "84411",
+      "name": "character_body_bat-0-1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": true,
+        "offsetX": 1.25,
+        "offsetY": -2.75,
+        "trimX": 112.5,
+        "trimY": 0.5,
+        "width": 121.5,
+        "height": 49.5,
+        "rawWidth": 128,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9fdae9cb-b90f-4570-944f-d86f7aa16216@6c48a",
+        "atlasUuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f5a3d": {
+      "importer": "sprite-frame",
+      "uuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5@f5a3d",
+      "displayName": "",
+      "id": "f5a3d",
+      "name": "character_body_bat-0-0",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": true,
+        "offsetX": -1.25,
+        "offsetY": 21.5,
+        "trimX": 0.5,
+        "trimY": 0.5,
+        "width": 123.5,
+        "height": 111,
+        "rawWidth": 128,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9fdae9cb-b90f-4570-944f-d86f7aa16216@6c48a",
+        "atlasUuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d5925": {
+      "importer": "sprite-frame",
+      "uuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5@d5925",
+      "displayName": "",
+      "id": "d5925",
+      "name": "character_body_bat-0-2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": true,
+        "offsetX": -8.75,
+        "offsetY": -18.25,
+        "trimX": 0.5,
+        "trimY": 125,
+        "width": 99.5,
+        "height": 111.5,
+        "rawWidth": 128,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9fdae9cb-b90f-4570-944f-d86f7aa16216@6c48a",
+        "atlasUuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3f98f": {
+      "importer": "sprite-frame",
+      "uuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5@3f98f",
+      "displayName": "",
+      "id": "3f98f",
+      "name": "character_body_bat-0-3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -24,
+        "offsetY": -15.5,
+        "trimX": 113,
+        "trimY": 123,
+        "width": 48,
+        "height": 72,
+        "rawWidth": 128,
+        "rawHeight": 256,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "9fdae9cb-b90f-4570-944f-d86f7aa16216@6c48a",
+        "atlasUuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "character_body_bat.png",
+    "format": 2,
+    "uuid": "7a7ef8cc-1f9f-4077-a644-377889e95fa5",
+    "textureUuid": "9fdae9cb-b90f-4570-944f-d86f7aa16216@6c48a"
+  }
+}

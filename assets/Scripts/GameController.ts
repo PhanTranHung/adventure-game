@@ -10,7 +10,7 @@ export class GameController extends Component {
     // physicsSystem.velocityIterations = 8;
     // physicsSystem.positionIterations = 8;
 
-    physicsSystem.debugDrawFlags =
-      EPhysics2DDrawFlags.Aabb | EPhysics2DDrawFlags.Pair | EPhysics2DDrawFlags.CenterOfMass | EPhysics2DDrawFlags.Joint | EPhysics2DDrawFlags.Shape;
+    // physicsSystem.debugDrawFlags =
+    //   EPhysics2DDrawFlags.Aabb | EPhysics2DDrawFlags.Pair | EPhysics2DDrawFlags.CenterOfMass | EPhysics2DDrawFlags.Joint | EPhysics2DDrawFlags.Shape;
   }
 }

@@ -1,0 +1,78 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "pet_beholder_moving",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 8,
+    "speed": 1,
+    "wrapMode": 2,
+    "events": [],
+    "enableTrsBlending": false,
+    "_duration": 0.75,
+    "_keys": [
+      [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          {
+            "__id__": 2
+          },
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@d6710",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@6422a",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@cdab0",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@c10f9",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@c959d",
+              "__expectedType__": "cc.SpriteFrame"
+            },
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@4ce76",
+              "__expectedType__": "cc.SpriteFrame"
+            }
+          ],
+          "easingMethods": {}
+        }
+      }
+    ],
+    "_commonTargets": [],
+    "_hash": 6370636
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "PetSprite"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

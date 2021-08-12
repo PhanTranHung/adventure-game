@@ -1,0 +1,107 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "pet_beholder_idle",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 15,
+    "speed": 1,
+    "wrapMode": 2,
+    "events": [],
+    "enableTrsBlending": false,
+    "_duration": 1.3333333333333333,
+    "_keys": [
+      [
+        0,
+        0.6666666666666666,
+        1.3333333333333333
+      ],
+      [
+        0
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "position"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 20,
+              "z": 0
+            },
+            {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          ],
+          "easingMethods": {
+            "0": [
+              0.41,
+              0.18,
+              0.64,
+              0.9
+            ],
+            "1": [
+              0.41,
+              0.18,
+              0.64,
+              0.9
+            ]
+          }
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          {
+            "__id__": 3
+          },
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            {
+              "__uuid__": "2805a47d-f2d6-4c80-b98e-7ed9925c63bf@c30fb",
+              "__expectedType__": "cc.SpriteFrame"
+            }
+          ],
+          "easingMethods": {}
+        }
+      }
+    ],
+    "_commonTargets": [],
+    "_hash": 4209974279
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "PetSprite"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "PetSprite"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

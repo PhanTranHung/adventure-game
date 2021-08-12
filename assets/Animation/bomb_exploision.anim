@@ -1,0 +1,96 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "bomb_exploision",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 30,
+    "speed": 1,
+    "wrapMode": 1,
+    "events": [],
+    "enableTrsBlending": false,
+    "_duration": 1,
+    "_keys": [
+      [
+        0
+      ],
+      [
+        0.1
+      ],
+      [
+        0.6666666666666666,
+        1
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "active"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            true
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 2
+          },
+          "active"
+        ],
+        "data": {
+          "keys": 1,
+          "values": [
+            true
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 3
+          },
+          {
+            "__id__": 4
+          },
+          "opacity"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [
+            255,
+            0
+          ],
+          "easingMethods": {}
+        }
+      }
+    ],
+    "_commonTargets": [],
+    "_hash": 1504723265
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "Explosion"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ExplosionRange"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "ExplosionRange"
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.UIOpacity"
+  }
+]
