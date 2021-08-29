@@ -1,14 +1,18 @@
 {
   "__version__": "3.0.0",
   "game": {
-    "name": "UNKNOW GAME",
-    "app_id": "UNKNOW",
+    "app_id": "601664655",
+    "name": "adventure",
     "c_id": "0"
   },
   "appConfigMaps": [
     {
       "app_id": "UNKNOW",
       "config_id": "87cb39"
+    },
+    {
+      "app_id": "601664655",
+      "config_id": "a0c2cf"
     }
   ],
   "configs": [
@@ -18,6 +22,19 @@
       "config_name": "Default",
       "config_remarks": "",
       "services": []
+    },
+    {
+      "app_id": "601664655",
+      "config_id": "a0c2cf",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": [
+        {
+          "service_id": "235",
+          "enable": false,
+          "param": {}
+        }
+      ]
     }
   ]
 }

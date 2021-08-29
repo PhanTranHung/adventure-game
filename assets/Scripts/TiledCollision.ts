@@ -1,10 +1,21 @@
-import { _decorator, Component, TiledLayer, TiledMap, Enum, PolygonCollider2D, Collider2D, Vec2, Size, BoxCollider2D, v2, UITransform } from "cc";
+import {
+  _decorator,
+  Component,
+  TiledLayer,
+  TiledMap,
+  Enum,
+  PolygonCollider2D,
+  Collider2D,
+  Vec2,
+  Size,
+  BoxCollider2D,
+  v2,
+  UITransform,
+  Collider,
+} from "cc";
 const { ccclass, property } = _decorator;
 import fxp from "fast-xml-parser";
-
-const groups = Enum({
-  GROUND: 4,
-});
+import { PhysicGroups } from "./utils/physic";
 
 const TileObjectGroup = Enum({
   RECTANGLE: "reactangle",
@@ -70,7 +81,7 @@ export class TiledCollision extends Component {
       switch (object.type) {
         case TileObjectGroup.POLYGON:
           let pcollider = this.node.addComponent(PolygonCollider2D)!;
-          pcollider.group = groups.GROUND;
+          pcollider.group = PhysicGroups.GROUND;
           pcollider.points = object.points;
           pcollider.offset = tilePosition.add(object.position);
           break;
@@ -78,7 +89,7 @@ export class TiledCollision extends Component {
         case TileObjectGroup.RECTANGLE:
           const objectHaftSize = v2().add(object.size).multiplyScalar(0.5);
           let bcollider = this.node.addComponent(BoxCollider2D)!;
-          bcollider.group = groups.GROUND;
+          bcollider.group = PhysicGroups.GROUND;
           bcollider.offset = tilePosition.add(object.position).add(objectHaftSize);
           bcollider.size = object.size;
           break;

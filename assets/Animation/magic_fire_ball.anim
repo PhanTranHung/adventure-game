@@ -18,6 +18,12 @@
       [
         0,
         1.3333333333333333
+      ],
+      [
+        0
+      ],
+      [
+        0
       ]
     ],
     "_stepness": 0,
@@ -73,6 +79,36 @@
           ],
           "easingMethods": {}
         }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 3
+          },
+          "active"
+        ],
+        "data": {
+          "keys": 2,
+          "values": [
+            false
+          ],
+          "easingMethods": {}
+        }
+      },
+      {
+        "modifiers": [
+          {
+            "__id__": 4
+          },
+          "active"
+        ],
+        "data": {
+          "keys": 3,
+          "values": [
+            false
+          ],
+          "easingMethods": {}
+        }
       }
     ],
     "_commonTargets": [],
@@ -85,5 +121,13 @@
   {
     "__type__": "cc.animation.HierarchyPath",
     "path": "force_field_w_l"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "explosion_1"
+  },
+  {
+    "__type__": "cc.animation.HierarchyPath",
+    "path": "explosion_2"
   }
 ]

@@ -43,8 +43,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 39.353,
-      "y": 375.864,
+      "x": -416.279,
+      "y": -133.14,
       "z": 0
     },
     "_lrot": {
@@ -363,7 +363,7 @@
     "__prefab": {
       "__id__": 19
     },
-    "attackTime": 5000,
+    "attackTime": 2,
     "alarmSensorRange": 300,
     "attackRange": 900,
     "bulletPrefab": {

@@ -1,4 +1,6 @@
 import { _decorator, Component, Node, EventMouse, Vec2, v2, EventTouch, CCBoolean, Camera } from "cc";
+import { CameraController } from "./CameraController";
+
 const { ccclass, property } = _decorator;
 
 @ccclass("SwipeCamera")
@@ -42,6 +44,7 @@ export class SwipeCamera extends Component {
 
   onTouchBegan(event: EventTouch) {
     this.touchMoved = false;
+    this.baseCamera?.getComponent(CameraController)?.setFollowTarget(false);
   }
 
   onTouchMove(event: EventTouch) {
@@ -62,7 +65,10 @@ export class SwipeCamera extends Component {
   onTouchEnd(event: EventTouch) {
     // if (this.touchMoved)
     // event.
+    this.baseCamera?.getComponent(CameraController)?.setFollowTarget(true);
   }
 
-  onTouchCancel(event: EventTouch) {}
+  onTouchCancel(event: EventTouch) {
+    this.baseCamera?.getComponent(CameraController)?.setFollowTarget(true);
+  }
 }

@@ -17,9 +17,9 @@ const { ccclass, property } = _decorator;
 @ccclass("PlantJumpControl")
 export class PlantJumpControl extends Component {
   @property({ type: Vec2 })
-  public force: Vec2 = v2(0, 1000);
-  @property({ type: CCInteger, tooltip: "Unit: ms" })
-  public waitTime = 500;
+  public force = v2(0, 1000);
+  @property({ type: CCInteger, tooltip: "Unit: s" })
+  public waitTime = 0.5;
 
   private pedal: BoxCollider2D | null = null;
   private animation: Animation | null = null;
@@ -41,12 +41,14 @@ export class PlantJumpControl extends Component {
   onBeginContact(selfCollider: BoxCollider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
     if (!this.isPreparing) {
       this.isPreparing = true;
-      if (this.animation) {
-        this.animation.play("JumpPlantPrepare");
-        this.animation.getState("JumpPlantPrepare").speed = 1000 / this.waitTime;
-        // console.log("Play animation: JumpPlantPrepare");
-      }
-      setTimeout(this.pushOtherBodies, this.waitTime);
+      this.scheduleOnce(() => {
+        if (this.animation) {
+          this.animation.play("JumpPlantPrepare");
+          this.animation.getState("JumpPlantPrepare").speed = 1 / this.waitTime;
+          // console.log("Play animation: JumpPlantPrepare");
+        }
+      });
+      this.scheduleOnce(this.pushOtherBodies, this.waitTime);
     }
     const otherBodyUuid = otherCollider.node.uuid;
     const otherBodyIndex = this.otherBodiesTouchMeNow.findIndex((value) => value.uuid === otherBodyUuid);
@@ -74,7 +76,7 @@ export class PlantJumpControl extends Component {
     this.otherBodiesTouchMeNow.map((body) => {
       body.body?.applyLinearImpulseToCenter(this.force, true);
     });
-    setTimeout(() => (this.isPreparing = false), 100);
+    this.scheduleOnce(() => (this.isPreparing = false), 0.1);
   };
 
   returnIdleState() {

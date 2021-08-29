@@ -40,7 +40,6 @@ export class PetController extends Component {
 
   update(dt: number) {
     if (this.target) {
-      debugger;
       const targetPosition = this.target.getPosition().add(this.distance.clone().multiply(this.currentDirection));
       const currentPosition = this.node.getPosition();
 

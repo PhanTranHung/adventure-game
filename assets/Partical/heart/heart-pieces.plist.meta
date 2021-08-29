@@ -1,0 +1,188 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "1d746318-529a-4da2-822e-ac43e15b8368",
+  "files": [
+    ".plist",
+    ".json"
+  ],
+  "subMetas": {
+    "67040": {
+      "importer": "sprite-frame",
+      "uuid": "1d746318-529a-4da2-822e-ac43e15b8368@67040",
+      "displayName": "",
+      "id": "67040",
+      "name": "heart_piece_3",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -1.5,
+        "trimX": 96,
+        "trimY": 0,
+        "width": 32,
+        "height": 29,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cae424a0-6a0f-4815-b935-1d1cc05de606@6c48a",
+        "atlasUuid": "1d746318-529a-4da2-822e-ac43e15b8368"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "600e5": {
+      "importer": "sprite-frame",
+      "uuid": "1d746318-529a-4da2-822e-ac43e15b8368@600e5",
+      "displayName": "",
+      "id": "600e5",
+      "name": "heart_piece_0",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -1.5,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 32,
+        "height": 29,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cae424a0-6a0f-4815-b935-1d1cc05de606@6c48a",
+        "atlasUuid": "1d746318-529a-4da2-822e-ac43e15b8368"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c4134": {
+      "importer": "sprite-frame",
+      "uuid": "1d746318-529a-4da2-822e-ac43e15b8368@c4134",
+      "displayName": "",
+      "id": "c4134",
+      "name": "heart_piece_1",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -1.5,
+        "trimX": 32,
+        "trimY": 0,
+        "width": 32,
+        "height": 29,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cae424a0-6a0f-4815-b935-1d1cc05de606@6c48a",
+        "atlasUuid": "1d746318-529a-4da2-822e-ac43e15b8368"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8332e": {
+      "importer": "sprite-frame",
+      "uuid": "1d746318-529a-4da2-822e-ac43e15b8368@8332e",
+      "displayName": "",
+      "id": "8332e",
+      "name": "heart_piece_2",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -1.5,
+        "trimX": 64,
+        "trimY": 0,
+        "width": 32,
+        "height": 29,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cae424a0-6a0f-4815-b935-1d1cc05de606@6c48a",
+        "atlasUuid": "1d746318-529a-4da2-822e-ac43e15b8368"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a34a7": {
+      "importer": "sprite-frame",
+      "uuid": "1d746318-529a-4da2-822e-ac43e15b8368@a34a7",
+      "displayName": "",
+      "id": "a34a7",
+      "name": "heart_piece_4",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -1.5,
+        "trimX": 128,
+        "trimY": 0,
+        "width": 32,
+        "height": 29,
+        "rawWidth": 32,
+        "rawHeight": 32,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cae424a0-6a0f-4815-b935-1d1cc05de606@6c48a",
+        "atlasUuid": "1d746318-529a-4da2-822e-ac43e15b8368"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "heart-pieces.png",
+    "format": 2,
+    "uuid": "1d746318-529a-4da2-822e-ac43e15b8368",
+    "textureUuid": "cae424a0-6a0f-4815-b935-1d1cc05de606@6c48a"
+  }
+}

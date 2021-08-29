@@ -23,11 +23,15 @@ import {
   v3,
   instantiate,
   CCFloat,
+  NodePool,
+  Animation,
 } from "cc";
+import { CustomEventStatus, CustomEventType } from "../../util/systemCustomEvents";
 const { ccclass, property } = _decorator;
 
 // import * as ccc from "cc";
 import { flip } from "../../util/util";
+import { MagicBallController } from "./MagicBallController";
 
 // window.ccc = ccc;
 
@@ -58,7 +62,7 @@ export class CharacterController extends Component {
   @property({ type: CCInteger })
   public jumpHeight: number = 10;
   @property(Prefab)
-  private bullet: Prefab | null = null;
+  private bullet: Prefab = null!;
   @property({ type: CCFloat })
   private attackSpeed: number = 1;
   @property(Vec3)
@@ -69,6 +73,8 @@ export class CharacterController extends Component {
   private rigidBody: RigidBody2D | null = null;
   private footCollider: CircleCollider2D | null = null;
   private isShootable = false;
+  private numOfBulletToGenerate = 7;
+  private bulletPool = new NodePool(MagicBallController);
 
   onLoad() {
     this.moveDirection = v2(1, 0);
@@ -76,12 +82,25 @@ export class CharacterController extends Component {
     this.rigidBody = this.node.getComponent(RigidBody2D);
     this.footCollider = this.node.getComponent(CircleCollider2D);
 
-    if (this.footCollider) {
-      this.footCollider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-    }
+    if (!this.bullet) throw "Bullet is null";
+    if (!this.footCollider) throw "Cannot find footer collider component";
+
+    this.footCollider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
 
     systemEvent.on(SystemEventType.KEY_DOWN, this.onKeyDown, this);
     systemEvent.on(SystemEventType.KEY_UP, this.onKeyUp, this);
+    // @ts-ignore
+    systemEvent.on(CustomEventType.CHARACTER_JUMP, this.onJumpDpad, this);
+    // @ts-ignore
+    systemEvent.on(CustomEventType.CHARACTER_ATTACK, this.onAttackDpad, this);
+    // @ts-ignore
+    systemEvent.on(CustomEventType.CHARACTER_MOVE_LEFT, this.onLeftDpad, this);
+    // @ts-ignore
+    systemEvent.on(CustomEventType.CHARACTER_MOVE_RIGHT, this.onRightDpad, this);
+    // @ts-ignore
+    systemEvent.on(CustomEventType.CHARACTER_REVIVLE, this.onRevivleDpad, this);
+
+    for (let i = 0; i < this.numOfBulletToGenerate; i++) this.bulletPool.put(instantiate(this.bullet));
   }
 
   start() {
@@ -92,6 +111,49 @@ export class CharacterController extends Component {
     // console.log("Other collider group", otherCollider.group);
 
     this.endJumping();
+  }
+
+  onJumpDpad(e: any) {
+    switch (e.type) {
+      case CustomEventStatus.START:
+        this.startJumping();
+        break;
+    }
+  }
+  onAttackDpad(e: any) {
+    switch (e.type) {
+      case CustomEventStatus.START:
+        this.scheduleOnce(() => this.handleAttack());
+        break;
+    }
+  }
+  onLeftDpad(e: any) {
+    switch (e.type) {
+      case CustomEventStatus.START:
+        this.startMoving(MoveDirection.LEFT);
+        break;
+
+      case CustomEventStatus.END:
+        if (this.movingState.x) this.stopMoving();
+        break;
+    }
+  }
+  onRightDpad(e: any) {
+    switch (e.type) {
+      case CustomEventStatus.START:
+        this.startMoving(MoveDirection.RIGHT);
+        break;
+      case CustomEventStatus.END:
+        if (this.movingState.x) this.stopMoving();
+        break;
+    }
+  }
+  onRevivleDpad(e: any) {
+    switch (e.type) {
+      case CustomEventStatus.START:
+        this.revivle();
+        break;
+    }
   }
 
   onKeyDown(e: EventKeyboard) {
@@ -195,19 +257,26 @@ export class CharacterController extends Component {
     // console.log(position, this.node.getComponent(UITransform)?.contentSize);
   }
 
+  archive(node: Node) {
+    this.bulletPool.put(node);
+  }
+
   handleAttack() {
     if (this.isShootable) {
       this.isShootable = false;
-      if (this.bullet) {
-        const bullet = instantiate(this.bullet);
-        bullet.parent = this.node.parent;
-        bullet.setPosition(this.node.getPosition());
-
-        const bulletRigidBody = bullet.getComponent(RigidBody2D);
-        if (bulletRigidBody) {
-          bulletRigidBody.linearVelocity = bulletRigidBody.linearVelocity.multiply(this.moveDirection);
-        }
+      if (this.bulletPool.size() <= 0) {
+        this.bulletPool.put(instantiate(this.bullet));
       }
+      let bulletNode = this.bulletPool.get(this.bulletPool)!;
+
+      bulletNode.parent = this.node.parent;
+      bulletNode.setPosition(this.node.getPosition());
+
+      const bulletRigidBody = bulletNode.getComponent(RigidBody2D)!;
+
+      bulletRigidBody.linearVelocity = bulletRigidBody.linearVelocity.multiply(this.moveDirection);
+      // bulletNode.active = true;
+
       this.scheduleOnce(() => {
         this.isShootable = true;
       }, this.attackSpeed);

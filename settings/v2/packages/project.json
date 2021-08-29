@@ -12,8 +12,8 @@
       "1": 702,
       "2": 2002,
       "3": 978,
-      "4": 382,
-      "5": 18,
+      "4": 350,
+      "5": 2,
       "6": 668,
       "7": 334,
       "8": 668,
@@ -39,7 +39,7 @@
       },
       {
         "index": 5,
-        "name": "ENEMIES_SENSOR"
+        "name": "ENEMY_SENSOR"
       },
       {
         "index": 6,
@@ -47,7 +47,7 @@
       },
       {
         "index": 7,
-        "name": "ENEMIES_BULLET"
+        "name": "ENEMY_BULLET"
       },
       {
         "index": 8,
@@ -63,5 +63,12 @@
       }
     ],
     "fixedTimeStep": 0.016667
+  },
+  "general": {
+    "designResolution": {
+      "fitWidth": true,
+      "height": 610,
+      "width": 960
+    }
   }
 }
