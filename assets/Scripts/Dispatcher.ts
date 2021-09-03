@@ -1,13 +1,13 @@
 import { _decorator, Component, Node, Event, systemEvent, Enum, Sprite, v3, Vec3 } from "cc";
-import { CustomEventStatus, CustomEventTypes } from "../util/systemCustomEvents";
+import { CustomDpadEventStatus, CustomEventTypeEnum } from "../util/systemCustomEvents";
 const { ccclass, property } = _decorator;
 
-Enum(CustomEventTypes);
+Enum(CustomEventTypeEnum);
 
 @ccclass("Dispatcher")
 export class Dispatcher extends Component {
-  @property({ type: CustomEventTypes })
-  event: CustomEventTypes = CustomEventTypes.NONE;
+  @property({ type: CustomEventTypeEnum })
+  event: CustomEventTypeEnum = CustomEventTypeEnum.NONE;
 
   onLoad() {
     this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this);
@@ -17,18 +17,18 @@ export class Dispatcher extends Component {
   }
 
   onTouchStart(e: TouchEvent) {
-    systemEvent.emit(CustomEventTypes[this.event], { type: CustomEventStatus.START });
+    systemEvent.emit(CustomEventTypeEnum[this.event], { type: CustomDpadEventStatus.START });
     // this.node.setScale(v3(0.9, 0.9));
   }
   onTouchMove(e: TouchEvent) {
-    systemEvent.emit(CustomEventTypes[this.event], { type: CustomEventStatus.MOVE });
+    systemEvent.emit(CustomEventTypeEnum[this.event], { type: CustomDpadEventStatus.MOVE });
   }
   onTouchEnd(e: TouchEvent) {
-    systemEvent.emit(CustomEventTypes[this.event], { type: CustomEventStatus.END });
+    systemEvent.emit(CustomEventTypeEnum[this.event], { type: CustomDpadEventStatus.END });
     // this.node.setScale(v3(1, 1));
   }
   onTouchCancel(e: TouchEvent) {
-    systemEvent.emit(CustomEventTypes[this.event], { type: CustomEventStatus.CANCEL });
+    systemEvent.emit(CustomEventTypeEnum[this.event], { type: CustomDpadEventStatus.CANCEL });
     // this.node.setScale(v3(1, 1));
   }
 }

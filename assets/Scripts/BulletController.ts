@@ -10,7 +10,9 @@ import {
   Animation,
   RigidBody2D,
   v2,
+  systemEvent,
 } from "cc";
+import { CustomEventType } from "../util/systemCustomEvents";
 const { ccclass, property } = _decorator;
 
 @ccclass("BulletController")
@@ -24,6 +26,9 @@ export class BulletController extends Component {
   }
 
   onBeginContact(selfCollider: BoxCollider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
+    if (otherCollider.node.name == "Character") {
+      systemEvent.emit(CustomEventType.CHARACTER_TAKE_DAMAGE, { damage: 3 });
+    }
     this.handleExplosion();
   }
 

@@ -1,16 +1,25 @@
-import { _decorator, Component, Node } from "cc";
+import { _decorator, Component, Node, UITransform, v2, Vec2 } from "cc";
 const { ccclass, property } = _decorator;
 
 @ccclass("CameraController")
 export class CameraController extends Component {
   @property(Node)
   private target: Node = null!;
+  @property(UITransform)
+  private mapSize: UITransform = null!;
 
   private followTarget: Boolean = true;
+  private limitBoxHalfSize: Vec2 = v2(1, 1);
 
   public setFollowTarget(shouldFollow: Boolean = true) {
     this.followTarget = shouldFollow;
   }
+
+  onLoad() {
+    this.calculateLimitBox();
+  }
+
+  calculateLimitBox() {}
 
   update() {
     if (this.followTarget) {

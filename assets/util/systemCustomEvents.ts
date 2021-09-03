@@ -1,4 +1,4 @@
-export enum CustomEventTypes {
+export enum CustomEventTypeEnum {
   NONE,
   CHARACTER_JUMP,
   CHARACTER_MOVE,
@@ -6,6 +6,7 @@ export enum CustomEventTypes {
   CHARACTER_MOVE_RIGHT,
   CHARACTER_ATTACK,
   CHARACTER_REVIVLE,
+  CHARACTER_BUFF_HP,
 }
 
 export const CustomEventType = {
@@ -16,9 +17,12 @@ export const CustomEventType = {
   CHARACTER_MOVE_RIGHT: "CHARACTER_MOVE_RIGHT",
   CHARACTER_ATTACK: "CHARACTER_ATTACK",
   CHARACTER_REVIVLE: "CHARACTER_REVIVLE",
+  CHARACTER_TAKE_DAMAGE: "CHARACTER_TAKE_DAMAGE",
+  CHARACTER_DIE: "CHARACTER_DIE",
+  CHARACTER_BUFF_HP: "CHARACTER_BUFF_HP",
 };
 
-export enum CustomEventStatus {
+export enum CustomDpadEventStatus {
   START,
   MOVE,
   END,

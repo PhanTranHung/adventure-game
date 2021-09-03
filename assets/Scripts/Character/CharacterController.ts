@@ -7,16 +7,12 @@ import {
   SystemEventType,
   macro,
   Node,
-  EventTouch,
-  Enum,
   RigidBody2D,
-  Vec2,
   BoxCollider2D,
   Contact2DType,
   Collider2D,
   IPhysics2DContact,
   v2,
-  PolygonCollider2D,
   Vec3,
   CircleCollider2D,
   Prefab,
@@ -24,9 +20,8 @@ import {
   instantiate,
   CCFloat,
   NodePool,
-  Animation,
 } from "cc";
-import { CustomEventStatus, CustomEventType } from "../../util/systemCustomEvents";
+import { CustomDpadEventStatus, CustomEventType } from "../../util/systemCustomEvents";
 const { ccclass, property } = _decorator;
 
 // import * as ccc from "cc";
@@ -99,6 +94,8 @@ export class CharacterController extends Component {
     systemEvent.on(CustomEventType.CHARACTER_MOVE_RIGHT, this.onRightDpad, this);
     // @ts-ignore
     systemEvent.on(CustomEventType.CHARACTER_REVIVLE, this.onRevivleDpad, this);
+    // @ts-ignore
+    systemEvent.on(CustomEventType.CHARACTER_DIE, this.onDie, this);
 
     for (let i = 0; i < this.numOfBulletToGenerate; i++) this.bulletPool.put(instantiate(this.bullet));
   }
@@ -109,51 +106,54 @@ export class CharacterController extends Component {
 
   onBeginContact(selfCollider: BoxCollider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
     // console.log("Other collider group", otherCollider.group);
-
     this.endJumping();
   }
 
   onJumpDpad(e: any) {
     switch (e.type) {
-      case CustomEventStatus.START:
+      case CustomDpadEventStatus.START:
         this.startJumping();
         break;
     }
   }
   onAttackDpad(e: any) {
     switch (e.type) {
-      case CustomEventStatus.START:
+      case CustomDpadEventStatus.START:
         this.scheduleOnce(() => this.handleAttack());
         break;
     }
   }
   onLeftDpad(e: any) {
     switch (e.type) {
-      case CustomEventStatus.START:
+      case CustomDpadEventStatus.START:
         this.startMoving(MoveDirection.LEFT);
         break;
 
-      case CustomEventStatus.END:
+      case CustomDpadEventStatus.END:
         if (this.movingState.x) this.stopMoving();
         break;
     }
   }
   onRightDpad(e: any) {
     switch (e.type) {
-      case CustomEventStatus.START:
+      case CustomDpadEventStatus.START:
         this.startMoving(MoveDirection.RIGHT);
         break;
-      case CustomEventStatus.END:
+      case CustomDpadEventStatus.END:
         if (this.movingState.x) this.stopMoving();
         break;
     }
   }
   onRevivleDpad(e: any) {
     switch (e.type) {
-      case CustomEventStatus.START:
+      case CustomDpadEventStatus.START:
         this.revivle();
         break;
     }
+  }
+  onDie() {
+    //@ts-ignore
+    systemEvent.emit(CustomEventType.CHARACTER_REVIVLE, { blood: 50, type: CustomDpadEventStatus.START });
   }
 
   onKeyDown(e: EventKeyboard) {
@@ -181,6 +181,10 @@ export class CharacterController extends Component {
 
       case macro.KEY.r:
         this.revivle();
+        break;
+
+      case macro.KEY.b:
+        systemEvent.emit(CustomEventType.CHARACTER_BUFF_HP, { blood: 5 });
         break;
     }
   }
